@@ -27,6 +27,10 @@ header li{
     text-decoration: none;
     color: black;
 }
+.header_list li:active{
+    text-decoration: none;
+    background-color: orange;
+}
 .icons{
     margin-top: 20px;
     display: flex;
@@ -89,9 +93,9 @@ header i{
     background-color: white;
     color: orange; 
 }*/
-#uvwx:hover{
+/* #uvwx:hover{
     color: orange;
-}
+} */
 .list-items:first-child{
     color: orange;
 }
