@@ -12,36 +12,40 @@ header{
 .header-logo{
     margin-left: 80px;
 }
-.main-bar{
-    display: none;
-}
 header ul{
     display: flex;
     justify-content: center;
     list-style-type: none;
-}
-header li{
     padding: 20px;
+    gap: 30px;
 }
-.header_list a{
+.nav-bar .header_list a{
     text-decoration: none;
     color: black;
 }
-.header_list li:active{
+ .nav-bar .header_list .navlink:active,.nav-bar .header_list a:hover{
     text-decoration: none;
-    background-color: orange;
+    background-color: rgb(243, 162, 11);
+    color:white;
+    border-radius: 4px;
+    border-color: black;
 }
 .icons{
     margin-top: 20px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 20px;
+    gap: 30px;
 }
 .icons a{
     color: black;
 }
-header i{
-    padding: 20px;
+.main-bar{
+    display: none;
+}
+.icons-search{
+    display: none;
 }
 .content{
     display: grid;
@@ -49,7 +53,7 @@ header i{
     font-size: x-large;
     margin-top: 35px;
     background-color: whitesmoke;
-    height: 600px
+
 }
 .great{
     margin-top: 50px;
@@ -69,18 +73,12 @@ header i{
 .content img{
     margin-left: 53px;
 }
-/* .content button a{
-    text-decoration: none;
-    color: white;
-    color: orange;
-} */
 .content button:hover{
     background-color: white;
     border: 0.5px solid burlywood;
     color: orange;
-    /* color: white; */
 }
-#sudo{
+#info-btn{
     color: orange;
     margin-left: 2px;
     background-color: whitesmoke;
@@ -88,14 +86,6 @@ header i{
     width: 132px;
     margin-bottom: 89px;
 }
-/* #sudo a{
-    text-decoration: none;
-    background-color: white;
-    color: orange; 
-}*/
-/* #uvwx:hover{
-    color: orange;
-} */
 .list-items:first-child{
     color: orange;
 }
@@ -108,15 +98,10 @@ header i{
 .fa-cart-shopping:hover{
     color: orange;
 }
-#sudo:hover{
+#info-btn:hover{
     border: 0.5px solid burlywood;
+    cursor: pointer;
 }
-/* section{
-    display: grid;
-    grid-template-columns: 20% 50% 25%;
-    margin-top: 80px;
-    background-color: whitesmoke;
-}  */
 .arm{
     margin-left: 48px;
     margin-top: 30px;
@@ -309,6 +294,9 @@ header i{
     padding: 12px;
     border-color: orange;
 }
+#view-btn:hover{
+    cursor: pointer;
+}
 #sayonara{
     font-weight: bold;
 }
@@ -368,9 +356,6 @@ header i{
     height: 400px;
     margin-bottom: -55px;
 }
-/* .para{
-    list-style-type: none;
-} */
 .history h4{
     margin: 40px;
 }

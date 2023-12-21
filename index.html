@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniture</title>
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 
 </head>    
@@ -19,15 +20,26 @@
         </div>
         <div class="header_list">
             <ul class="list_items">
-                <a href="#"><li id="uvwx">Home</li></a>
-                <a href="./newArrival.html"><li id="uvwx">New Arrival</li></a>
-                <a href="./Feature.html"><li id="uvwx">Features</li></a>
-                <a href="./blog.html"><li id="uvwx">Blog</li></a>
-                <a href="./contact.html"><li id="uvwx">Contact</li></a>
+               <li>
+                <a href="#" class="nav-link">Home</a>
+               </li>
+               <li>
+                <a href="./newArrival.html" class="nav-link">NewArrival</a>
+               </li>
+               <li>
+                <a href="./Feature.html" class="nav-link">Features</a>
+               </li>
+               <li>
+                <a href="./blog.html" class="nav-link">Blog</a>
+               </li>
+               <li>
+                <a href="./contact.html" class="nav-link">Contact</a>
+               </li>
             </ul>
         </div>
         <div class="icons">
             <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <span><input type="search" class="icons-search" id="search-input"></span>
             <a href="#"><i class="fa-solid fa-gear"></i></a>
             <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
@@ -35,29 +47,60 @@
     </header>
 
 <!-- HOME page -->
-
-    <div class="content">
-        <div class="great">
-            <p><storng>Great Design Collecton</storng></p>
-            <h1>Coth Covered Accent Chair</h1>
-            <p>Lorem ipsum Dolor Sit Amet,Consectecture Adipisicing Elit,Swd Do Eiuiana Smod Tempor Ut
-            Labore Et Dolore Magna Aliqua.Ut Enim  Ad Minim Veniam,Quis Nostrud Exercition
-            Ullamco Laboris Nisi Ut Aliquip.</p>
-            <span><b>---$ 399.00</b>
-                <s id="rate1">$ 499.00</s>
-            </span>
-            <br><br><br>
-            <button>
-                <i class="fa-sharp fa-solid fa-circle-plus">Add to cart</i>
-            </button>
-            <button id="sudo">
-                More Info
-            </button>
+    <section class="index-sectino home-section slider-section">
+        <div class="content">
+            <div class="great">
+                <p><storng>Great Design Collecton</storng></p>
+                <h1>Coth Covered Accent Chair</h1>
+                <p>Lorem ipsum Dolor Sit Amet,Consectecture Adipisicing Elit,Swd Do Eiuiana Smod Tempor Ut
+                Labore Et Dolore Magna Aliqua.Ut Enim  Ad Minim Veniam,Quis Nostrud Exercition
+                Ullamco Laboris Nisi Ut Aliquip.</p>
+                <span><b>---$ 399.00</b>
+                    <s id="rate1">$ 499.00</s>
+                </span>
+                <br><br><br>
+                <button>
+                    <i class="fa-sharp fa-solid fa-circle-plus">Add to cart</i>
+                </button>
+                <button id="info-btn" onclick="infoFunction()">
+                    More Info
+                </button>
+            </div>
+            <div>
+                <img src="../media/images/slider/slider1.png" alt="Cloth-Chair" class="clotth-chair slider-img" id="slider-img1">
+            </div>
         </div>
-        <div>
-            <img src="../media/images/slider/slider1.png" alt="">
-        </div>
-    </div>
+        <section class="block-section">
+            <div class="content-slide2 slider-chair slides" id="slider-chair">
+                <div>
+                    <img src="./media//images/slider/slider2.png" class="wooden-chair slide-img" id="wooden-chair">
+                </div>
+                <div>
+                    <h1>Wooden Chair</h1>
+                    <p>Lorem ipsum Dolor Sit Amet,Consectecture Adipisicing Elit,Swd Do Eiuiana Smod Tempor Ut
+                    Labore Et Dolore Magna Aliqua.Ut Enim  Ad Minim Veniam,Quis Nostrud Exercition
+                    Ullamco Laboris Nisi Ut Aliquip.</p>
+                    <span><b>---$ 399.00</b>
+                        <s id="rate1">$ 499.00</s>
+                    </span>
+                </div>
+            </div>
+            <div class="content-slide3 slider-sofa slides" id="slider-sofa">
+                <div>
+                    <img src="./media//images/slider/slider3.png" class="modern-sofa slide-img" id="modern-sofa">
+                </div>
+                <div>
+                    <h1>Modern Sofa</h1>
+                    <p>Lorem ipsum Dolor Sit Amet,Consectecture Adipisicing Elit,Swd Do Eiuiana Smod Tempor Ut
+                    Labore Et Dolore Magna Aliqua.Ut Enim  Ad Minim Veniam,Quis Nostrud Exercition
+                    Ullamco Laboris Nisi Ut Aliquip.</p>
+                    <span><b>---$ 399.00</b>
+                        <s id="rate1">$ 499.00</s>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </section>
 
 <!-- HOME Page 2 -->
 
@@ -160,6 +203,6 @@
    </footer>
 
 
-   <script src="../js/furniture.js"></script>
+   <script src="./js/index.js"></script>
 </body> 
 </html>

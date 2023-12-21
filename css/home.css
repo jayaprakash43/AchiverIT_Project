@@ -1,0 +1,17 @@
+.block-section{
+    display: none;
+}
+.hidding-section{
+    display: flex;
+    justify-content: space-around;
+}
+.modern-sofa{
+    width: 553px;
+}
+.wooden-chair{
+    width: 450px;
+}
+.slides h1{
+    text-align: center;
+}
+/* new arrival */
